@@ -1,0 +1,9 @@
+[Unit]
+Description=VPN on wifi monitor
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/vow
+
+[Install]
+WantedBy=multi-user.target
